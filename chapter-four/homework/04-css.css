@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 0 10px;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    border-bottom-style: inset;
+    z-index: 1;
+    background-color: white;
+}
+
+.header_p {
+    float: left;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+li{
+    list-style: none;
+    padding:0 10px;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: darkgray;
+}
+
+main{
+    margin: auto;
+    max-width: 1300px;
+    z-index: 0;
+}
+
+h3{
+    margin:20px 10px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-flex-boxes-box-text_div{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    right: 10px;
+    bottom: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.main-about_div{
+    font-size: 13px;
+}
+
+.main-flex-boxes_div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-flex-boxes_div img{
+    height: 200px;
+}
+
+.main-flex-boxes-box_div {
+    position: relative;
+    width: calc(25% - 20px);
+    padding: 10px;
+}
+
+.main-flex-boxes-box_div a{
+    color: #000;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    background-color: lightgray;
+}
+
+.main-flex-boxes-box_div a:hover{
+    background-color: darkgray;
+}
+
+.main-flex-boxes-box-name_div{
+    padding: 10px 0;
+}
+
+.main-flex-boxes-box-post_div{
+    padding: 0 0 10px 0;
+    color: darkgrey;
+}
+
+.main-flex-boxes-box_div p{
+    padding: 0 0 10px 0;
+    margin-left: 0;
+    font-size: 13px;
+}
+
+footer{
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+/* 大部分平板 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 90%;
+    }
+
+    .main-flex-boxes-box_div {
+        width: calc(50% - 40px);
+    }
+
+    .main-flex-boxes_div img{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    html {
+        font-size: calc(100/375 * 12vw);
+    }
+    p,h3{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    ul{
+        display: none;
+    }
+    .box-wrapper{
+        display: block;
+    }
+    .main-flex-boxes-box-text_div{
+        right: 20px;
+        bottom: 25px;
+    }
+    .main-flex-boxes_div{
+        display: block;
+    }
+    .main-flex-boxes-box_div {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .main-flex-boxes_div img{
+        height: 300px;
+    }
+}
+
+

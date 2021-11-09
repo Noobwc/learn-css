@@ -1,0 +1,9 @@
+
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ô¹µó
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(êüÞœýÿÿÿÿ
+NWeb:AvoidCommentedOutCodeCheck	"Remove this commented out code.(¸ºŠ¸úÿÿÿÿ
+IWeb:AvoidCommentedOutCodeCheck
+"Remove this commented out code.(„¹Ùï
+FWeb:BoldAndItalicTagsCheck"!Replace this <b> tag by <strong>.(âŽ¸`
+GWeb:ImgWithoutAltCheck$"%Add an "alt" attribute to this image.(½ö‚¡
+GWeb:ImgWithoutAltCheck-"%Add an "alt" attribute to this image.(½ö‚¡
